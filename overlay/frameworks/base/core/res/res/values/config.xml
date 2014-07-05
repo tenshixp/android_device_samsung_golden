@@ -113,4 +113,13 @@
     
     <!-- Enable lockscreen translucent decor -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+    
+        <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+    <integer-array name="config_keyboardTapVibePattern">
+        <item>20</item>
+    </integer-array>
+
+    <!-- The duration (in milliseconds) that the radio will scan for a signal
+         when there's no network connection. If the scan doesn't timeout, use zero -->
+    <integer name="config_radioScanningTimeout">9000</integer>
 </resources>
