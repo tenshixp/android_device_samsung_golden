@@ -45,6 +45,7 @@ const char fstab_data_ext4[] = "/dev/block/mmcblk0p25                       /dat
 const char fstab_original_c[] =
 "/dev/block/mmcblk0p20                       /boot                emmc    defaults                                              defaults\n"
 "/dev/block/mmcblk0p21                       /recovery            emmc    defaults                                              defaults\n"
+"/dev/block/mmcblk0p24                       /storage/sdcard2     ext4    defaults                                              wait\n"
 "/devices/sdi0/mmc_host/mmc1/mmc1            /storage/sdcard1     auto    defaults                                              voldmanaged=sdcard1:auto\n"
 "/devices/platform/musb-ux500.0/musb-hdrc    /storage/usbdisk0    auto    defaults                                              voldmanaged=usbdisk0:auto\n"
 "/dev/block/zram0                             none                swap    defaults                                              zramsize=134217728\n"
