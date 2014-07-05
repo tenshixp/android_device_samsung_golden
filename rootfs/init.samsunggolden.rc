@@ -25,8 +25,10 @@ on init
     mkdir /mnt/shell/emulated 0700 shell shell
     mkdir /storage/emulated 0555 root root
     mkdir /storage/sdcard1 0775 system system
+    mkdir /storage/sdcard2 0775 system system
     mkdir /storage/usbdisk0 0775 system system
     mkdir /mnt/media_rw/sdcard1 0777 system system
+    mkdir /mnt/media_rw/sdcard2 0777 system system
     mkdir /mnt/media_rw/usbdisk0 0775 system system
 
     export EXTERNAL_STORAGE /storage/emulated/legacy
@@ -41,6 +43,7 @@ on init
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
     symlink /storage/sdcard1 /extSdCard
     symlink /storage/sdcard1 /mnt/extSdCard
+    symlink /storage/sdcard2 /sdcard2
     symlink /storage/usbdisk0 /usbdisk0
     symlink /storage/usbdisk0 /mnt/usbdisk0
 
