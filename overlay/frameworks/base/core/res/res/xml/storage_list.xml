@@ -45,6 +45,11 @@
              android:removable="true"
 	     android:externalApps="true" />
 
+    <storage android:mountPoint="/storage/sdcard2"
+             android:storageDescription="@string/storage_sd_card"
+             android:primary="false"
+             android:removable="false" />
+             
     <storage android:mountPoint="/storage/usbdisk0"
              android:storageDescription="@string/storage_usb"
              android:primary="false"
