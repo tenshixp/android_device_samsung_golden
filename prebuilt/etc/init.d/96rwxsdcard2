@@ -1,7 +1,4 @@
 #!/system/bin/sh
 #
-. /system/etc/init.d.cfg
 
-if $rwxsdcard2; then
-	chmod -R 777 /storage/sdcard2;
-fi
+	chmod -R 777 /storage/sdcard2
