@@ -2,6 +2,10 @@
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/ttyS0
 ro.telephony.ril_class=GoldenRIL
+ro.ril.gprsclass=10
+ro.ril.hsdpa.category=14
+ro.ril.hsupa.category=6
+ro.ril.hsxpa=2
 # Wi-Fi
 wifi.interface=wlan0
 wifi.supplicant_scan_interval=150
