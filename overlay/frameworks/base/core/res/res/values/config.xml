@@ -118,7 +118,12 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>20</item>
     </integer-array>
-
+    
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>24</item>
+    </integer-array>
+    
     <!-- The duration (in milliseconds) that the radio will scan for a signal
          when there's no network connection. If the scan doesn't timeout, use zero -->
     <integer name="config_radioScanningTimeout">9000</integer>
