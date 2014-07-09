@@ -601,6 +601,7 @@ PRODUCT_COPY_FILES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     device/samsung/golden/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+    device/samsung/golden/prebuilt/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
 # Security Daemon Modem
 PRODUCT_COPY_FILES += \
