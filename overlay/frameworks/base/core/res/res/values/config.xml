@@ -123,4 +123,41 @@
     <integer-array name="config_virtualKeyVibePattern">
         <item>24</item>
     </integer-array>
+    
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- MMS user agent string -->
+    <string name="config_mms_user_agent">SAMSUNG-GT-I8190-Mms</string>
+
+    <!-- MMS user agent prolfile url -->
+    <string name="config_mms_user_agent_profile_url">http://wap.samsungmobile.com/uaprof/GT-I8190.xml</string>
+
+    <!-- Try-again polling interval in milliseconds, in case the network request failed -->
+    <integer name="config_ntpPollingIntervalShorter">180000</integer>
+
+    <!-- Number of times to try again with the shorter interval, before backing
+         off until the normal polling interval. A value < 0 indicates infinite. -->
+    <integer name="config_ntpRetry">-1</integer>
+
+    <!-- Display low battery warning when battery level dips to this value.
+         Also, the battery stats are flushed to disk when we hit this level.  -->
+    <integer name="config_criticalBatteryWarningLevel">4</integer>
+
+    <!-- Whether WiFi display is supported by this device.
+         There are many prerequisites for this feature to work correctly.
+         Here are a few of them:
+         * The WiFi radio must support WiFi P2P.
+         * The WiFi radio must support concurrent connections to the WiFi display and
+           to an access point.
+         * The Audio Flinger audio_policy.conf file must specify a rule for the "r_submix"
+           remote submix module.  This module is used to record and stream system
+           audio output to the WiFi display encoder in the media server.
+         * The remote submix module "audio.r_submix.default" must be installed on the device.
+         * The device must be provisioned with HDCP keys (for protected content).
+    -->
+    <bool name="config_enableWifiDisplay">true</bool>    
 </resources>
